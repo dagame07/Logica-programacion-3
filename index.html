@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora de factorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="tarjeta">
+        <h1>Calculadora de factorial</h1>
+        <p class="ayuda">Escribe un número entero mayor o igual a 0.</p>
+
+        <label for="inputNumero">Número</label>
+        <div class="fila">
+            <input type="number" id="inputNumero" min="0" step="1" placeholder="Ej. 5" autofocus>
+            <button type="button" id="btnCalcular">Calcular</button>
+        </div>
+
+        <p id="error" class="error" role="alert" hidden></p>
+
+        <section id="resultado" class="resultado" aria-live="polite" hidden></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
